@@ -2,4 +2,9 @@
 
 {% block content %}
 <h1>Hi Charlie look I got a domain up and running lmao</h1>
+
+    {% for name in names %}
+        <p>{{ name }}</p>
+    {% endfor %}
+
 {% endblock %}

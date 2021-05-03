@@ -1,10 +1,18 @@
 from flask import Flask, render_template
+from fundraiser import Fundraiser
 
 app = Flask(__name__)
 
+temp_list = ["harry", "david", "barney"]
+
+
+
+
 @app.route("/")
 def home():
-    return render_template('home.html')
+    temp_fun = Fundraiser(12, 25)
+    temp_list[0] = temp_fun.getTotal()
+    return render_template('home.html', names=temp_list)
     
 @app.route("/about")
 def about():
