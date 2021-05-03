@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" + "?v=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" + "?v=1">
     <meta charset="utf-8">
 	{% if title %}
 	<title>{{ title }}</title>
@@ -12,18 +12,21 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">First Web App</h1>
-            <strong><nav>
-                <ul class="menu">
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                </ul>
-            </nav></strong>
-        </div>
-    </header>
+ 
+    <div class="jumbotron text-center">
+      <h1>Cutty2Castle</h1>
+      <p>Trying out the Bootstrap CSS</p> 
+    </div>
     
-    {% block content %}{% endblock %}
+    
+    <div class="container">
+      <strong><nav>
+        <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+      </nav></strong>
+      {% block content %}{% endblock %}
+    </div>
 </body>
 </html>
