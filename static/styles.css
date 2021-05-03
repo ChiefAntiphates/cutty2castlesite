@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*general subheader font*/
+body {
+  background-color: #d1d1d1;
+  color: #000f00;
+  font-family: Blinker, sans-serif;
+}
+
+h1 {
+  font-family: Bitter, sans-serif;
+  color: red;
+}
