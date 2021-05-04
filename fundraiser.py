@@ -1,10 +1,10 @@
 class Fundraiser:
-    def __init__(self, total, number):
-        self.total = total
-        self.number = number
+    def __init__(self, donationNo, totalRaised):
+        self.donationNo = donationNo
+        self.totalRaised = totalRaised
     
-    def getTotal(self):
-        return self.total
+    def getDonationNo(self):
+        return self.donationNo
         
-    def getNumber(self):
-        return self.number
+    def getTotalRaised(self):
+        return self.totalRaised
