@@ -2,15 +2,9 @@ from flask import Flask, render_template
 from fundraiser import Fundraiser
 from fundraiser_functions import *
 
-#Next use HTTP request to get JustGiving and load Fundraise object
-#contents = urllib.request.urlopen("http://example.com/foo/bar").read()
-
-
-
-
 app = Flask(__name__)
 
-temp_list = ["harry", "david", "barney"]
+temp_list = ["harry", "david", "barney", "heol"]
 
 
 
@@ -20,8 +14,13 @@ def home():
     #contents = urllib.request.urlopen('GET',"https://api.justgiving.com/137f78b6/v1/fundraising/pages/mark-clark6/").read()
     
     dean_fun = getDeanFarmTrustFun()
+    amf_fun = getAMFFun()
     temp_list[0] = dean_fun.getDonationNo()
     temp_list[1] = dean_fun.getTotalRaised()
+    temp_list[2] = amf_fun.getDonationNo()
+    temp_list[3] = amf_fun.getTotalRaised()
+    
+    
     return render_template('home.html', names=temp_list)
     
 @app.route("/about")
