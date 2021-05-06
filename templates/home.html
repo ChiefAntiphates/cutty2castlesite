@@ -1,10 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Hi Charlie look I got a domain up and running lmao</h1>
+    <script src="static/animate_value.js"></script>
+    <main class="d-flex h-100 text-center text-white bg-dark">
+        <h1 id="total_header">£<span id="total">{{ total }}</span></h1>
+        <p class="lead">raised by <span id="donors">{{ donors }}</span> donors</p>
+    </main>
+    <br>
+    <p align="center">We are raising money for the following charities, please consider donating to one or both</p>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="static/amf.jpg" alt="Against Malaria Foundation" width="80%">
+        </div>
+        <div class="grid-item">
+            <img src="static/dft.jpg" alt="Dean Farm Trust" width="80%">
+        </div>
+        <div class="grid-item">
+        <a class="btn btn-lg btn-primary" href="/docs/5.0/components/navbar/" role="button">Donate</a>
+            <p>Donate to Against Malaria Foundation via their page</p>
+        </div>
+        <div class="grid-item">
+            <p>Donate to Against Malaria Foundation via their page</p>
+        </div>
+    </div>
 
-    {% for name in names %}
-        <p>{{ name }}</p>
-    {% endfor %}
+    <script>animateValue("total", -1, {{ total }}, 2500);</script>
+    <script>animateValue("donors", -1, {{ donations }}, 1500);</script>
 
 {% endblock %}

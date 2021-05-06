@@ -2,7 +2,7 @@ import requests
 import json
 from fundraiser import Fundraiser
 
-DEAN_FARM_TRUST_URL = "https://api.justgiving.com/137f78b6/v1/fundraising/pages/paula-walsh11/"
+DEAN_FARM_TRUST_URL = "https://api.justgiving.com/137f78b6/v1/fundraising/pages/teameh10/"
 AMF_URL = "https://www.againstmalaria.com/Fundraiser.aspx?FundraiserID=8534"
 
 AMF_SPONSOR_TAG = b'MainContent_UcFundraiserSponsors1_ucPager2_pnlTextCounter">Sponsors'
