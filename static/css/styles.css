@@ -6,19 +6,39 @@
     font-size: 6em;
 }
 
-#header {
-    font-family: 'Trebuchet MS', sans-serif;
+* {
+    font-family: Ubuntu;
+}
+
+#top-bar {
+    padding: 1em;
+}
+
+.header-p {
+    font-size: 0.8em;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: #2196F3;
-  padding: 10px;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  padding: 0.3em;
   text-align: center;
+  position: relative;
 }
+
+.donate_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.donate_text {
+    padding-top: 0.4em;
+}
+
+#padding-bottom {
+    padding-bottom: 5em;
+}   

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" + "?v=1">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" + "?v=1">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <meta charset="utf-8">
 	{% if title %}
 	<title>{{ title }}</title>
@@ -15,13 +16,15 @@
 
 <body>
  
-    <div class="jumbotron text-center">
-      <h3 id="header">A 50 mile charity walk along the Thames from Cutty Sark to Windsor Castle</h3> 
+    <div class="jumbotron text-center" id="top-bar">
+      <h3><span class="header-p">50 MILE CHARITY WALK FROM</span><br>
+      <b>CUTTY SARK</b> TO <b>WINDSOR CASTLE</b><br>
+      <span class="header-p">ALONG THE RIVER THAMES<span></h3> 
     </div>
     
     
     
-    <div class="container">
+    <div class="container" id="padding-bottom">
       {% block content %}{% endblock %}
     </div>
     
