@@ -39,6 +39,10 @@
     padding-top: 0.4em;
 }
 
+.low-padding{
+    padding: 0.4em;
+}
+
 #padding-bottom {
     padding-bottom: 5em;
 }   
