@@ -16,7 +16,7 @@ def home():
     dean_fun = getDeanFarmTrustFun()
     amf_fun = getAMFFun()
     
-    return render_template('home.html', total=dean_fun.getTotalRaised()+amf_fun.getTotalRaised(), donations=2)
+    return render_template('home.html', total=dean_fun.getTotalRaised()+amf_fun.getTotalRaised(), donations=dean_fun.getDonationNo()+amf_fun.getDonationNo())
     
 @app.route("/about")
 def about():
