@@ -1,9 +1,31 @@
 #donors {
     font-size: 1.1em;
+    font-weight: bold;
 }
 
 #total_header {
-    font-size: 6em;
+    font-size: 7.2em;
+}
+
+.no-top {
+    padding-top: 0.3em;
+    margin-top: 0em;
+}
+
+.donate-btn {
+    background-color:#a60fa3;
+    border-color:#a60fa3;
+    transition-duration: 0.2s;
+}
+
+.donate-btn:hover {
+    background-color:#e354de;
+    border-color:#e354de;
+}
+
+.little-pad {
+    padding: 0.5em;
+    margin: 0.5em;
 }
 
 * {
@@ -11,7 +33,13 @@
 }
 
 #top-bar {
+    padding: 0.1em;
+    margin: 0;
+}
+
+#bottom-bar {
     padding: 1em;
+    margin-bottom: 0em;
 }
 
 .header-p {
@@ -22,10 +50,24 @@
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
 .grid-item {
-  padding: 0.3em;
+  padding: 0.1em;
   text-align: center;
   position: relative;
+}
+
+.general {
+    font-size: 1.2em;
+}
+
+.charity-link a {
+    color: black;
+    font-weight: bold;
+}
+
+.smaller-general {
+    font-size: 1.1em;
 }
 
 .donate_img{
@@ -40,7 +82,7 @@
 }
 
 .low-padding{
-    padding: 0.4em;
+    padding: 0.3em;
 }
 
 #padding-bottom {

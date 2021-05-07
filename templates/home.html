@@ -2,30 +2,50 @@
 
 {% block content %}
     <script src="static/animate_value.js"></script>
-    <main class="d-flex h-100 text-center text-white bg-dark">
-        <h1 id="total_header">£<span id="total">{{ total }}</span></h1>
-        <p class="lead">raised by <span id="donors">{{ donors }}</span> donors</p>
+    <main class="d-flex h-100 text-center text-white bg-dark no-top">
+        <h1 class="no-top"id="total_header">£<span id="total">{{ total }}</span></h1>
+        <p class="lead">RAISED BY <span id="donors">{{ donors }}</span> DONORS</p>
     </main>
     <br>
-    <p align="center">We are raising money for the following charities, please consider donating to one or both</p>
+    <p align="center" class="general">
+        On July 31<sup>st</sup> 2021 we will be walking 50 miles along the River Thames to raise money for<br> 
+        the <span class="charity-link"><a href="https://www.againstmalaria.com/Default.aspx">Against Malaria Foundation</a></span>
+        and <span class="charity-link"><a href="https://deanfarmtrust.org.uk/">Dean Farm Trust</a></span>.
+        <br><br>
+        As we discuss <a href="/">here</a>, both of these causes are very close to our hearts, and we hope that by<br>
+        completing this walk we can raise both money and awareness for these amazing charities.
+        <br><br>
+        To find more information on the walk, please scroll further down this page.<br>
+        To sponsor us, please consider donating to one or both of these charities using the links provided below.<br><br>
+        Thank you for your support,<br>
+        Harry & Charlie
+    </p>
     <div class="grid-container">
         <div class="grid-item">
-            <img src="static/amf.jpg" alt="Against Malaria Foundation" width="60%">
+            <img src="static/amf.jpg" alt="Against Malaria Foundation" width="50%">
         </div>
         <div class="grid-item">
-            <img src="static/dft.jpg" alt="Dean Farm Trust" width="80%" class="donate_img">
+            <img src="static/dft.jpg" alt="Dean Farm Trust" width="66%" class="donate_img">
         </div>
         <div class="grid-item">
-        <a class="btn btn-lg btn-primary low-padding" href="https://www.againstmalaria.com/Donate.aspx?FundRaiserID=8534&ProjectID=1" role="button">Donate</a>
-            <p class="donate_text">Donate to Against Malaria Foundation via their fundraising page</p>
+            <a class="btn btn-lg btn-primary low-padding donate-btn" href="https://www.againstmalaria.com/Donate.aspx?FundRaiserID=8534&ProjectID=1" role="button">Donate</a>
+            <p class="donate_text">Via their fundraising page</p>
         </div>
         <div class="grid-item">
-            <a class="btn btn-lg btn-primary low-padding" href="https://www.againstmalaria.com/Donate.aspx?FundRaiserID=8534&ProjectID=1" role="button">Donate</a>
-            <p class="donate_text">Donate to Dean Farm Trust via JustGiving</p>
-        </div>
+            <a class="btn btn-lg btn-primary low-padding donate-btn" href="https://www.againstmalaria.com/Donate.aspx?FundRaiserID=8534&ProjectID=1" role="button">Donate</a>
+            <p class="donate_text">Via JustGiving</p>
         </div>
     </div>
-
+    
+    <br><br>
+    <h2 align="center"><b>ABOUT THE WALK</b></h2>
+    <p align="center" class="general">
+        More text here is here text here is text here is text here is text<br>
+        More text here is here text here is text here is text here is text<br>
+        More text here is here text here is text here is text here is text<br>
+        More text here is here text here is text here is text here is text<br>
+        More text here is here text here is text here is text here is text<br>
+    </p>
     <script>animateValue("total", -1, {{ total }}, 2500);</script>
     <script>animateValue("donors", -1, {{ donations }}, 1500);</script>
 
