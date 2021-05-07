@@ -59,6 +59,8 @@
 
 .general {
     font-size: 1.2em;
+    max-width: 80%;
+    margin: 0 auto 0 auto;
 }
 
 .charity-link a {
