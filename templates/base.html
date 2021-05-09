@@ -3,9 +3,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" + "?v=3">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" + "?v=3">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" + "?v=5">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link rel="icon" href="{{ url_for('static', filename='walking.png') }}">
     <meta charset="utf-8">
 	{% if title %}
 	<title>{{ title }}</title>
@@ -27,8 +28,9 @@
       {% block content %}{% endblock %}
     </div>
     
-     <div class="jumbotron text-center" id="bottom-bar">
-      <p>Hey hey heeeey</p>
+     <div class="text-center" id="bottom-bar">
+      <p class="footer">This website was designed as a landing page, sorry that it's not overly aesthetic</p>
+      <p class="footer">Thank you for your support <3</p>
     </div>
     
 </body>
