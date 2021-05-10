@@ -11,8 +11,12 @@ AMF_TOTAL_TAG = b'id="MainContent_lblGrandTotal">'
 
 
 def getDeanFarmTrustFun():
-    fundraiser_json = getJsonFromRequest(DEAN_FARM_TRUST_URL)
-    donations_json = getJsonFromRequest(DEAN_FARM_TRUST_URL+"donations/")
+    try :
+        fundraiser_json = getJsonFromRequest(DEAN_FARM_TRUST_URL)
+        donations_json = getJsonFromRequest(DEAN_FARM_TRUST_URL+"donations/")
+        getJustGivingFromUrl()
+    except:
+        return Fundraiser(0,0)
     return Fundraiser(int(donations_json['pagination']['totalResults']),float(fundraiser_json['grandTotalRaisedExcludingGiftAid']))
 
 
