@@ -14,8 +14,8 @@ def getDeanFarmTrustFun():
     try :
         fundraiser_json = getJsonFromRequest(DEAN_FARM_TRUST_URL)
         donations_json = getJsonFromRequest(DEAN_FARM_TRUST_URL+"donations/")
-        getJustGivingFromUrl()
     except:
+        print("here")
         return Fundraiser(0,0)
     return Fundraiser(int(donations_json['pagination']['totalResults']),float(fundraiser_json['grandTotalRaisedExcludingGiftAid']))
 
