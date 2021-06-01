@@ -5,7 +5,9 @@
     <main class="d-flex h-100 text-center text-white bg-dark no-top">
         <h1 class="no-top"id="total_header">£<span id="total">{{ total }}</span></h1>
         <p class="lead">RAISED BY <span id="donors">{{ donors }}</span> DONORS</p>
+        <img src="{{ url_for('static', filename='c2cimg.png') }}" width="25%">
     </main>
+    
     <br>
     <p align="center" class="general">
         On July 31<sup>st</sup> 2021 we will be walking 50 miles along the River Thames to raise money for
